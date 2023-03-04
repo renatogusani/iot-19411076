@@ -1,16 +1,17 @@
 # IoT Real Time Analytics Assessment
 
-# Building a Cloud-Based IoT System with Node-RED and AWS DynamoDB
+# Building a Cloud-Based IoT System with PI Sense Hat SIM, Node-RED and AWS DynamoDB
 
 This guide will walk you through the steps to build a cloud-based IoT system using Node-RED and AWS DynamoDB. By following these steps, you will be able to access sensor values, publish them to the cloud, and retrieve and graph the findings in a web application.
 
 # To complete the steps mentioned in the below message, you will need to install the following Node-RED nodes:
 
-```node-red-contrib-aws:``` This node provides the aws-iot node for connecting to AWS IoT Core.
+1. ```node-red-dashboard:``` This node provides a set of pre-built UI components for creating a web dashboard to visualize and control IoT data.
 
-```node-red-node-dynamodb:``` This node provides the dynamodb node for interacting with DynamoDB.
+3. ```node-red-contrib-aws:``` This node provides a set of nodes for connecting Node-RED to AWS services, such as AWS IoT Core, AWS S3, AWS DynamoDB, and more.
 
-```node-red-dashboard:``` This node provides the ui_chart node for displaying a chart on the Node-RED dashboard.
+5. ```node-red-contrib-sense-hat:``` This node provides a set of nodes for working with the Sense HAT hardware on a Raspberry Pi, such as reading temperature, humidity, pressure, and orientation data, displaying messages on the LED matrix, and more.
+
 
 To install these nodes, follow these steps:
 

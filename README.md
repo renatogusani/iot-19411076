@@ -145,3 +145,25 @@ Here are the step-by-step technical details to set up AWS DynamoDB:
 7. Click the "Create" button to create the table.
 
 Your DynamoDB table is now set up and ready to be used.
+
+### Step 4: Configure the AWS IoT Rule
+
+Here are the step-by-step technical details for configuring the AWS IoT rule:
+
+Step 1: Log in to the AWS IoT Core console using your AWS account credentials.
+
+Step 2: Click on "Create a rule" on the left-hand side of the screen.
+
+Step 3: Enter a name for your rule in the "Rule name" field.
+
+Step 4: In the "Rule query statement" section, enter the topic that your Node-RED flow is publishing to. For example, if your flow is publishing to a topic called "sensors/temperature," enter that topic here.
+
+Step 5: In the "Set one or more actions" section, select "Send a message to a DynamoDB table" from the dropdown menu.
+
+Step 6: Choose the table that you created in step 3 from the "Choose a target DynamoDB table" dropdown menu.
+
+Step 7: In the "Configure payload" section, you can choose to use the entire message payload or select specific fields to be included in the DynamoDB item attributes. You can also set data types and transformations as needed.
+
+Step 8: Click on "Add action" to save the rule.
+
+Your AWS IoT rule is now configured to send messages from your Node-RED flow to the DynamoDB table you created in step 3.

@@ -167,3 +167,19 @@ Step 7: In the "Configure payload" section, you can choose to use the entire mes
 Step 8: Click on "Add action" to save the rule.
 
 Your AWS IoT rule is now configured to send messages from your Node-RED flow to the DynamoDB table you created in step 3.
+
+### Step 5: Verify Data in DynamoDB
+
+Here are the step-by-step technical details for verifying data in DynamoDB:
+
+1. Wait for the Node-RED flow to publish some simulated sensor data to AWS IoT Core.
+
+2. Go to the AWS DynamoDB console and select the table that you created in step 3.
+
+3. Click on the "Items" tab to see the list of items in the table.
+
+4. Check if the simulated sensor data is being written to the table by verifying the values in the items.
+
+5. You can also use the "Query" tab to search for specific items based on the item attributes.
+
+6. If you see the simulated sensor data in the table, then the integration between Node-RED and AWS DynamoDB is working correctly.

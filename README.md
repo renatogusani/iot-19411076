@@ -53,7 +53,7 @@ Click on the "Create" button to create a new Thing.
 
 8. Click on the "Create a certificate" button to create a new certificate for the Thing.
 
-9.Click on the "Download" button for each of the following to download the Thing's certificate, public key, and private key:
+9. Click on the "Download" button for each of the following to download the Thing's certificate, public key, and private key:
 
 - Certificate: This is the certificate that your Thing will use to authenticate with AWS IoT Core.
 - Public key: This is the public key that your Thing will use to encrypt messages.

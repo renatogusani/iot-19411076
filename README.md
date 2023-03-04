@@ -110,3 +110,14 @@ msg.payload = {
 };
 return msg;
 ```
+Connect the nodes: Connect the output of the "inject" node to the input of the "function" node.
+
+Drag an "aws-iot" node onto the workspace: Drag the "aws-iot" node from the left-hand side of the editor onto the workspace.
+
+Configure the "aws-iot" node: Double-click on the "aws-iot" node to configure it. In the "AWS IoT Core" section, enter the Thing's certificate, public key, and private key that you downloaded earlier. In the "Topic" section, select the desired topic to publish to.
+
+Connect the nodes: Connect the output of the "function" node to the input of the "aws-iot" node.
+
+Deploy the Node-RED flow: Click on the "Deploy" button in the top right corner of the editor to deploy the Node-RED flow.
+
+That's it! You have now set up Node-RED to generate simulated sensor data and publish it to AWS IoT Core.

@@ -86,6 +86,21 @@ Note: Replace "<account_id>" with your AWS account ID.
 Click on "Create" to create the policy and attach it to the Thing.
 That's it! You have now created an AWS IoT Thing, downloaded its certificate, public key, and private key, created an IoT policy, and attached the policy to the Thing.
 
+### Step 2: Set Up Node-RED
+Here are the step-by-step technical details for setting up Node-RED:
 
+Install Node-RED on your computer or Raspberry Pi: You can download and install Node-RED from the official website of Node-RED.
+
+Open the Node-RED editor: Once Node-RED is installed, open the Node-RED editor by typing the following command in the terminal: node-red.
+
+Create a new flow: Click on the "+" icon on the right side of the editor to create a new flow.
+
+Drag an "inject" node onto the workspace: Drag the "inject" node from the left-hand side of the editor onto the workspace.
+
+Configure the "inject" node: Double-click on the "inject" node to configure it. Set the "Payload Type" to "String" and enter the desired interval in milliseconds.
+
+Drag a "function" node onto the workspace: Drag the "function" node from the left-hand side of the editor onto the workspace.
+
+Write JavaScript code for generating simulated sensor data: Double-click on the "function" node to edit it. Write some JavaScript code that generates simulated sensor data. You can use the following example code:
 
 

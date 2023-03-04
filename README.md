@@ -8,9 +8,9 @@ This guide will walk you through the steps to build a cloud-based IoT system usi
 
 1. ```node-red-dashboard:``` This node provides a set of pre-built UI components for creating a web dashboard to visualize and control IoT data.
 
-3. ```node-red-contrib-aws:``` This node provides a set of nodes for connecting Node-RED to AWS services, such as AWS IoT Core, AWS S3, AWS DynamoDB, and more.
+2. ```node-red-contrib-aws:``` This node provides a set of nodes for connecting Node-RED to AWS services, such as AWS IoT Core, AWS S3, AWS DynamoDB, and more.
 
-5. ```node-red-contrib-sense-hat:``` This node provides a set of nodes for working with the Sense HAT hardware on a Raspberry Pi, such as reading temperature, humidity, pressure, and orientation data, displaying messages on the LED matrix, and more.
+3. ```node-red-contrib-sense-hat:``` This node provides a set of nodes for working with the Sense HAT hardware on a Raspberry Pi, such as reading temperature, humidity, pressure, and orientation data, displaying messages on the LED matrix, and more.
 
 
 To install these nodes, follow these steps:
@@ -23,7 +23,8 @@ Open the Node-RED editor.
 4. Click the "Install" button next to each node.
 5. Wait for the installation to complete.
 6. Close the "Manage palette" window.
-7. Once you have installed these nodes, you will be able to complete the steps mentioned in the previous message.
+
+Once you have installed these nodes, you will be able to complete the steps mentioned in the below message.
 
 
 ## Steps

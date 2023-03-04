@@ -4,6 +4,24 @@
 
 This guide will walk you through the steps to build a cloud-based IoT system using Node-RED and AWS DynamoDB. By following these steps, you will be able to access sensor values, publish them to the cloud, and retrieve and graph the findings in a web application.
 
+# To complete the steps mentioned in the previous message, you will need to install the following Node-RED nodes:
+
+```node-red-contrib-aws:``` This node provides the aws-iot node for connecting to AWS IoT Core.
+```node-red-node-dynamodb:``` This node provides the dynamodb node for interacting with DynamoDB.
+```node-red-dashboard:``` This node provides the ui_chart node for displaying a chart on the Node-RED dashboard.
+To install these nodes, follow these steps:
+
+Open the Node-RED editor.
+
+1. Click on the hamburger menu on the top-right corner of the editor and select "Manage palette".
+2. Click on the "Install" tab.
+3. Search for each of the three nodes mentioned above.
+4. Click the "Install" button next to each node.
+5. Wait for the installation to complete.
+6. Close the "Manage palette" window.
+7. Once you have installed these nodes, you will be able to complete the steps mentioned in the previous message.
+
+
 ## Steps
 
 ### Step 1: Set Up AWS IoT Core

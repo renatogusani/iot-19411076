@@ -125,3 +125,23 @@ return msg;
 12. Deploy the Node-RED flow: Click on the "Deploy" button in the top right corner of the editor to deploy the Node-RED flow.
 
 That's it! You have now set up Node-RED to generate simulated sensor data and publish it to AWS IoT Core.
+
+### Step 3: Set Up AWS DynamoDB
+
+Here are the step-by-step technical details to set up AWS DynamoDB:
+
+1. Go to the AWS Management Console and log in to your account.
+
+2. In the console search bar, type "DynamoDB" and select the "DynamoDB" service.
+
+3. Click on the "Create table" button.
+
+4. Enter a unique table name in the "Table name" field.
+
+5. Choose a primary key for your table. You can either select a partition key, a combination of partition key and sort key or use no sort key.
+
+6. Configure any additional desired settings, such as read and write capacity units, provisioned throughput, global secondary indexes or tags.
+
+7. Click the "Create" button to create the table.
+
+Your DynamoDB table is now set up and ready to be used.

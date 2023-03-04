@@ -52,9 +52,10 @@ On the Thing's details page, click on "Security" in the left-hand menu.
 Click on the "Create a certificate" button to create a new certificate for the Thing.
 Click on the "Download" button for each of the following to download the Thing's certificate, public key, and private key:
 
-Certificate: This is the certificate that your Thing will use to authenticate with AWS IoT Core.
-Public key: This is the public key that your Thing will use to encrypt messages.
-Private key: This is the private key that your Thing will use to decrypt messages.
+- Certificate: This is the certificate that your Thing will use to authenticate with AWS IoT Core.
+- Public key: This is the public key that your Thing will use to encrypt messages.
+- Private key: This is the private key that your Thing will use to decrypt messages.
+
 Click on "Activate" to activate the certificate.
 
 Attach a policy to the Thing to grant it permission to publish and subscribe to desired topics.

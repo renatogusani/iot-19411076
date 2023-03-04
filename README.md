@@ -61,7 +61,9 @@ Here are the step-by-step technical details for creating an AWS IoT Thing, downl
 
 1. Create an AWS account if you don't have one already by going to the AWS website and following the prompts to sign up.
 
-2. Once you have an AWS account, go to the AWS IoT Core console by navigating to the "Services" menu and searching for "IoT Core" in the search bar. 3. Click on "IoT Core" to open the console.
+2. Once you have an AWS account, go to the AWS IoT Core console by navigating to the "Services" menu and searching for "IoT Core" in the search bar. 
+
+3. Click on "IoT Core" to open the console.
 
 4. In the IoT Core console, click on "Manage" in the left-hand menu, and then click on "Things."
 Click on the "Create" button to create a new Thing.

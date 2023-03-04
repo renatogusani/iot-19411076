@@ -183,3 +183,36 @@ Here are the step-by-step technical details for verifying data in DynamoDB:
 5. You can also use the "Query" tab to search for specific items based on the item attributes.
 
 6. If you see the simulated sensor data in the table, then the integration between Node-RED and AWS DynamoDB is working correctly.
+
+
+
+Here are step-by-step technical details for:
+
+### Step 6: Visualize the Data in Node-RED
+
+1. Open the Node-RED editor and create a new flow.
+
+3. Drag a "dynamodb" node from the Node-RED palette onto the workspace.
+
+5. Double-click the "dynamodb" node and configure it to read from the table you created in step 3. Enter the desired key and any optional filtering or sorting options.
+
+7. Drag a "function" node from the Node-RED palette onto the workspace and connect it to the "dynamodb" node.
+
+9. Write some JavaScript code in the "function" node that extracts the sensor data from the DynamoDB item and formats it as an array. For example, you can use the following code:
+```
+msg.payload = msg.payload.Items.map(item => {
+  return {
+    timestamp: new Date(item.timestamp.S).getTime(),
+    value: parseFloat(item.value.N)
+  };
+});
+return msg;
+```
+This code extracts the timestamp and value from each DynamoDB item, converts the timestamp to a Unix timestamp in milliseconds, and formats the data as an array of objects.
+
+6. Drag a "ui_chart" node from the Node-RED dashboard palette onto the workspace and connect it to the output of the "function" node.
+
+8. Double-click the "ui_chart" node and configure it with the desired settings for the chart, such as the chart type, title, and axis labels.
+
+9. Deploy the Node-RED flow and open the Node-RED dashboard to view the chart.
+Congratulations! You have now visualized the sensor data retrieved from AWS DynamoDB in a chart using Node-RED.

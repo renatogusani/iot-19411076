@@ -102,5 +102,11 @@ Configure the "inject" node: Double-click on the "inject" node to configure it. 
 Drag a "function" node onto the workspace: Drag the "function" node from the left-hand side of the editor onto the workspace.
 
 Write JavaScript code for generating simulated sensor data: Double-click on the "function" node to edit it. Write some JavaScript code that generates simulated sensor data. You can use the following example code:
-
-
+```
+msg.payload = {
+  temperature: Math.floor(Math.random() * 100),
+  humidity: Math.floor(Math.random() * 100),
+  pressure: Math.floor(Math.random() * 1000)
+};
+return msg;
+```

@@ -115,40 +115,47 @@ Click on "Create" to create the policy and attach it to the Thing.
 That's it! You have now created an AWS IoT Thing, downloaded its certificate, public key, and private key, created an IoT policy, and attached the policy to the Thing.
 
 ### Step 2: Set Up Node-RED
-Here are the step-by-step technical details for setting up Node-RED:
 
-1. Install Node-RED on your computer or Raspberry Pi: You can download and install Node-RED from the official website of Node-RED.
+Here are the step-by-step technical details for setting up Node-RED to read sensor data from Sense HAT sim and publish it to AWS IoT Core:
 
-2. Open the Node-RED editor: Once Node-RED is installed, open the Node-RED editor by typing the following command in the terminal: node-red.
+1. Install Node-RED on your computer or Raspberry Pi. You can follow the instructions for your specific platform from the official Node-RED
+documentation: https://nodered.org/docs/getting-started
 
-3. Create a new flow: Click on the "+" icon on the right side of the editor to create a new flow.
+2. Open the Node-RED editor by going to http://localhost:1880 (if Node-RED is installed on your local computer) or http://<your-Raspberry-Pi-IP-address>:1880 (if Node-RED is installed on a Raspberry Pi).
 
-4. Drag an "inject" node onto the workspace: Drag the "inject" node from the left-hand side of the editor onto the workspace.
+3. Create a new flow by clicking on the "+" icon in the top-right corner of the Node-RED editor.
 
-5. Configure the "inject" node: Double-click on the "inject" node to configure it. Set the "Payload Type" to "String" and enter the desired interval in milliseconds.
+4. Drag an "inject" node from the left-hand palette onto the workspace.
 
-6. Drag a "function" node onto the workspace: Drag the "function" node from the left-hand side of the editor onto the workspace.
+5. Double-click the "inject" node to open its configuration dialog. Set the "Payload" to "timestamp" and set the "Repeat" interval to the desired value (e.g., 5 seconds).
 
-7. Write JavaScript code for generating simulated sensor data: Double-click on the "function" node to edit it. Write some JavaScript code that generates simulated sensor data. You can use the following example code:
-```
-msg.payload = {
-  temperature: Math.floor(Math.random() * 100),
-  humidity: Math.floor(Math.random() * 100),
-  pressure: Math.floor(Math.random() * 1000)
-};
-return msg;
-```
-8. Connect the nodes: Connect the output of the "inject" node to the input of the "function" node.
+6. Drag a "Sense HAT" node from the left-hand palette onto the workspace.
 
-9. Drag an "aws-iot" node onto the workspace: Drag the "aws-iot" node from the left-hand side of the editor onto the workspace.
+7. Double-click the "Sense HAT" node to open its configuration dialog. Select "Sense HAT Sim" from the "Device" dropdown menu.
 
-10. Configure the "aws-iot" node: Double-click on the "aws-iot" node to configure it. In the "AWS IoT Core" section, enter the Thing's certificate, public key, and private key that you downloaded earlier. In the "Topic" section, select the desired topic to publish to.
+8. Connect the "output" of the "Sense HAT" node to the "input" of the "aws-iot" node.
 
-11. Connect the nodes: Connect the output of the "function" node to the input of the "aws-iot" node.
+9. Drag an "aws-iot" node from the left-hand palette onto the workspace.
 
-12. Deploy the Node-RED flow: Click on the "Deploy" button in the top right corner of the editor to deploy the Node-RED flow.
+10. Double-click the "aws-iot" node to open its configuration dialog.
 
-That's it! You have now set up Node-RED to generate simulated sensor data and publish it to AWS IoT Core.
+11. Click the pencil icon next to the "AWS IoT Broker" field to open the AWS IoT Core settings dialog.
+
+12. In the AWS IoT Core settings dialog, enter the following information:
+- AWS Region: select the region where you created your AWS IoT Core resources (e.g., "us-east-1").
+- Thing Name: enter the name of the Thing that you created in Step 1.
+- Certificate: click the "pencil" icon and paste in the contents of the certificate file that you downloaded in Step 1.
+- Private Key: click the "pencil" icon and paste in the contents of the private key file that you downloaded in Step 1.
+- Node ID: enter a unique identifier for this Node-RED instance (e.g., "node-red-01").
+- Enable Keep Alive: check the box to enable keep-alive messages.
+
+13. In the "Message Topic" field, enter the desired topic to publish sensor data to (e.g., "sensors/temp").
+
+14. Connect the "output" of the "Sense HAT" node to the "input" of the "aws-iot" node.
+
+15. Deploy the Node-RED flow by clicking the "Deploy" button in the top-right corner of the editor.
+
+Now, Node-RED should be sending simulated sensor data from the Sense HAT sim to AWS IoT Core at the specified interval. You can verify that the data is being received by checking the AWS IoT Core console.
 
 ### Step 3: Set Up AWS DynamoDB
 

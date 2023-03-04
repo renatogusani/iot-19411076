@@ -93,19 +93,19 @@ That's it! You have now created an AWS IoT Thing, downloaded its certificate, pu
 ### Step 2: Set Up Node-RED
 Here are the step-by-step technical details for setting up Node-RED:
 
-Install Node-RED on your computer or Raspberry Pi: You can download and install Node-RED from the official website of Node-RED.
+1. Install Node-RED on your computer or Raspberry Pi: You can download and install Node-RED from the official website of Node-RED.
 
-Open the Node-RED editor: Once Node-RED is installed, open the Node-RED editor by typing the following command in the terminal: node-red.
+2. Open the Node-RED editor: Once Node-RED is installed, open the Node-RED editor by typing the following command in the terminal: node-red.
 
-Create a new flow: Click on the "+" icon on the right side of the editor to create a new flow.
+3. Create a new flow: Click on the "+" icon on the right side of the editor to create a new flow.
 
-Drag an "inject" node onto the workspace: Drag the "inject" node from the left-hand side of the editor onto the workspace.
+4. Drag an "inject" node onto the workspace: Drag the "inject" node from the left-hand side of the editor onto the workspace.
 
-Configure the "inject" node: Double-click on the "inject" node to configure it. Set the "Payload Type" to "String" and enter the desired interval in milliseconds.
+5. Configure the "inject" node: Double-click on the "inject" node to configure it. Set the "Payload Type" to "String" and enter the desired interval in milliseconds.
 
-Drag a "function" node onto the workspace: Drag the "function" node from the left-hand side of the editor onto the workspace.
+6. Drag a "function" node onto the workspace: Drag the "function" node from the left-hand side of the editor onto the workspace.
 
-Write JavaScript code for generating simulated sensor data: Double-click on the "function" node to edit it. Write some JavaScript code that generates simulated sensor data. You can use the following example code:
+7. Write JavaScript code for generating simulated sensor data: Double-click on the "function" node to edit it. Write some JavaScript code that generates simulated sensor data. You can use the following example code:
 ```
 msg.payload = {
   temperature: Math.floor(Math.random() * 100),
@@ -114,14 +114,14 @@ msg.payload = {
 };
 return msg;
 ```
-Connect the nodes: Connect the output of the "inject" node to the input of the "function" node.
+8. Connect the nodes: Connect the output of the "inject" node to the input of the "function" node.
 
-Drag an "aws-iot" node onto the workspace: Drag the "aws-iot" node from the left-hand side of the editor onto the workspace.
+9. Drag an "aws-iot" node onto the workspace: Drag the "aws-iot" node from the left-hand side of the editor onto the workspace.
 
-Configure the "aws-iot" node: Double-click on the "aws-iot" node to configure it. In the "AWS IoT Core" section, enter the Thing's certificate, public key, and private key that you downloaded earlier. In the "Topic" section, select the desired topic to publish to.
+10. Configure the "aws-iot" node: Double-click on the "aws-iot" node to configure it. In the "AWS IoT Core" section, enter the Thing's certificate, public key, and private key that you downloaded earlier. In the "Topic" section, select the desired topic to publish to.
 
-Connect the nodes: Connect the output of the "function" node to the input of the "aws-iot" node.
+11. Connect the nodes: Connect the output of the "function" node to the input of the "aws-iot" node.
 
-Deploy the Node-RED flow: Click on the "Deploy" button in the top right corner of the editor to deploy the Node-RED flow.
+12. Deploy the Node-RED flow: Click on the "Deploy" button in the top right corner of the editor to deploy the Node-RED flow.
 
 That's it! You have now set up Node-RED to generate simulated sensor data and publish it to AWS IoT Core.

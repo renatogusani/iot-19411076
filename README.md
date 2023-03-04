@@ -7,8 +7,11 @@ This guide will walk you through the steps to build a cloud-based IoT system usi
 # To complete the steps mentioned in the previous message, you will need to install the following Node-RED nodes:
 
 ```node-red-contrib-aws:``` This node provides the aws-iot node for connecting to AWS IoT Core.
+
 ```node-red-node-dynamodb:``` This node provides the dynamodb node for interacting with DynamoDB.
+
 ```node-red-dashboard:``` This node provides the ui_chart node for displaying a chart on the Node-RED dashboard.
+
 To install these nodes, follow these steps:
 
 Open the Node-RED editor.

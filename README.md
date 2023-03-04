@@ -38,31 +38,34 @@ That's it! You have now built a cloud-based IoT system that accesses sensor valu
 ### Step 1: Set Up AWS IoT Core
 Here are the step-by-step technical details for creating an AWS IoT Thing, downloading the Thing's certificate, public key, and private key, creating an IoT policy, and attaching the policy to the Thing:
 
-Create an AWS account if you don't have one already by going to the AWS website and following the prompts to sign up.
+1. Create an AWS account if you don't have one already by going to the AWS website and following the prompts to sign up.
 
-Once you have an AWS account, go to the AWS IoT Core console by navigating to the "Services" menu and searching for "IoT Core" in the search bar. Click on "IoT Core" to open the console.
-In the IoT Core console, click on "Manage" in the left-hand menu, and then click on "Things."
+2. Once you have an AWS account, go to the AWS IoT Core console by navigating to the "Services" menu and searching for "IoT Core" in the search bar. 3. Click on "IoT Core" to open the console.
+
+4. In the IoT Core console, click on "Manage" in the left-hand menu, and then click on "Things."
 Click on the "Create" button to create a new Thing.
 
-Enter a name for your Thing, and optionally add any attribute key-value pairs. Click on "Create Thing" to create the Thing.
+5. Enter a name for your Thing, and optionally add any attribute key-value pairs. Click on "Create Thing" to create the Thing.
 
-Once the Thing has been created, click on its name to open its details page.
-On the Thing's details page, click on "Security" in the left-hand menu.
+6. Once the Thing has been created, click on its name to open its details page.
 
-Click on the "Create a certificate" button to create a new certificate for the Thing.
-Click on the "Download" button for each of the following to download the Thing's certificate, public key, and private key:
+7. On the Thing's details page, click on "Security" in the left-hand menu.
+
+8. Click on the "Create a certificate" button to create a new certificate for the Thing.
+
+9.Click on the "Download" button for each of the following to download the Thing's certificate, public key, and private key:
 
 - Certificate: This is the certificate that your Thing will use to authenticate with AWS IoT Core.
 - Public key: This is the public key that your Thing will use to encrypt messages.
 - Private key: This is the private key that your Thing will use to decrypt messages.
 
-Click on "Activate" to activate the certificate.
+10. Click on "Activate" to activate the certificate.
 
-Attach a policy to the Thing to grant it permission to publish and subscribe to desired topics.
+11. Attach a policy to the Thing to grant it permission to publish and subscribe to desired topics.
 
-Click on "Attach a policy" and enter a name for the policy.
+12. Click on "Attach a policy" and enter a name for the policy.
 
-In the policy editor, enter the necessary details to grant the Thing permission to publish and subscribe to desired topics. For example, you can use the following policy to allow the Thing to publish and subscribe to a topic named "my/topic":
+13. In the policy editor, enter the necessary details to grant the Thing permission to publish and subscribe to desired topics. For example, you can use the following policy to allow the Thing to publish and subscribe to a topic named "my/topic":
 ```
 {
     "Version": "2012-10-17",

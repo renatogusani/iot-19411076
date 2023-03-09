@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/renatogusani/Bsc.-Data-Science">
+  <a href="https://github.com/renatogusani/iot-19411076">
     <img src="img/image3.png" alt="Banner">
   </a>
 

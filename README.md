@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/renatogusani/Bsc.-Data-Science">
-    <img src="image.png" alt="Banner">
+    <img src="img/image3.png" alt="Banner">
   </a>
 
   <h3 align="center">IoT Real Time Analytics Assessment | NCI</h3>

@@ -59,7 +59,7 @@ Open the Node-RED editor.
 Once you have installed these nodes, you will be able to complete the steps mentioned in the below message.
 
 
-## Steps
+## Step by Step Guide
 
 ### Step 1: Set Up AWS IoT Core
 
@@ -125,31 +125,6 @@ That's it! You have now created an AWS IoT Thing, downloaded its certificate, pu
 
 Install Node-RED on your computer or a Raspberry Pi. Open the Node-RED editor and create a new flow. Drag an "inject" node onto the workspace and configure it to send a message at a desired interval. Drag a "Sense HAT" node onto the workspace and configure it to read sensor data from the Sense HAT sim. Connect the output of the "Sense HAT" node to an "aws-iot" node. Drag an "aws-iot" node onto the workspace and double-click it to configure the AWS IoT Core settings. Enter the Thing's certificate, public key, and private key, and select the desired topic to publish to. Connect the output of the "Sense HAT" node to the input of the "aws-iot" node. Deploy the Node-RED flow.
 
-### Step 3: Set Up AWS DynamoDB
-
-Go to the AWS DynamoDB console and create a new table. Choose a unique table name and a primary key. Configure any desired settings, such as read and write capacity units. Save the table.
-
-### Step 4: Configure the AWS IoT Rule
-
-Go to the AWS IoT Core console and create a new rule. Configure the rule to match the desired topic that the Node-RED flow is publishing to. Choose an action to take when a message matches the rule. Select "Send a message to a DynamoDB table" and choose the table that you created in step 3. Configure the mapping between the message payload and the DynamoDB item attributes. Save the rule.
-
-### Step 5: Verify Data in DynamoDB
-
-Wait for the Node-RED flow to publish some sensor data to AWS IoT Core. Go to the AWS DynamoDB console and verify that the data is being written to the table.
-
-### Step 6: Visualize the Data in Node-RED
-
-Create a new flow in Node-RED that retrieves the sensor data from the DynamoDB table and visualizes it in a graph. Drag a "dynamodb" node onto the workspace and configure it to read from the table you created in step 3. Choose the desired key and any optional filtering or sorting options. Connect the output of the "dynamodb" node to a function node that extracts the sensor data from the DynamoDB item and formats it as an array. Connect the output of the function node to a "ui_chart" node, which can be used to display the sensor data as a line chart. Configure the chart with the desired settings. Deploy the Node-RED flow and open the Node-RED dashboard to view the chart.
-
-That's it! You have now built a cloud-based IoT system that accesses sensor values from the Sense HAT sim, publishes them to the cloud, and retrieves and graphs the findings in a web application using Node-RED and AWS DynamoDB.
-
-## Technical Steps
-
-### Step 1: Set Up AWS IoT Core
-
-
-### Step 2: Set Up Node-RED
-
 Here are the step-by-step technical details for setting up Node-RED to read sensor data from Sense HAT sim and publish it to AWS IoT Core:
 
 1. Install Node-RED on your computer or Raspberry Pi. You can follow the instructions for your specific platform from the official Node-RED
@@ -193,6 +168,8 @@ Now, Node-RED should be sending simulated sensor data from the Sense HAT sim to 
 
 ### Step 3: Set Up AWS DynamoDB
 
+Go to the AWS DynamoDB console and create a new table. Choose a unique table name and a primary key. Configure any desired settings, such as read and write capacity units. Save the table.
+  
 Here are the step-by-step technical details to set up AWS DynamoDB:
 
 1. Go to the AWS Management Console and log in to your account.
@@ -213,6 +190,8 @@ Your DynamoDB table is now set up and ready to be used.
 
 ### Step 4: Configure the AWS IoT Rule
 
+Go to the AWS IoT Core console and create a new rule. Configure the rule to match the desired topic that the Node-RED flow is publishing to. Choose an action to take when a message matches the rule. Select "Send a message to a DynamoDB table" and choose the table that you created in step 3. Configure the mapping between the message payload and the DynamoDB item attributes. Save the rule.
+  
 Here are the step-by-step technical details for configuring the AWS IoT rule:
 
 Step 1: Log in to the AWS IoT Core console using your AWS account credentials.
@@ -249,12 +228,16 @@ Here are the step-by-step technical details for verifying data in DynamoDB:
 
 6. If you see the simulated sensor data in the table, then the integration between Node-RED and AWS DynamoDB is working correctly.
 
+### Step 5: Verify Data in DynamoDB
 
-
-Here are step-by-step technical details for:
+Wait for the Node-RED flow to publish some sensor data to AWS IoT Core. Go to the AWS DynamoDB console and verify that the data is being written to the table.
 
 ### Step 6: Visualize the Data in Node-RED
 
+Create a new flow in Node-RED that retrieves the sensor data from the DynamoDB table and visualizes it in a graph. Drag a "dynamodb" node onto the workspace and configure it to read from the table you created in step 3. Choose the desired key and any optional filtering or sorting options. Connect the output of the "dynamodb" node to a function node that extracts the sensor data from the DynamoDB item and formats it as an array. Connect the output of the function node to a "ui_chart" node, which can be used to display the sensor data as a line chart. Configure the chart with the desired settings. Deploy the Node-RED flow and open the Node-RED dashboard to view the chart.
+
+That's it! You have now built a cloud-based IoT system that accesses sensor values from the Sense HAT sim, publishes them to the cloud, and retrieves and graphs the findings in a web application using Node-RED and AWS DynamoDB.
+  
 1. Open the Node-RED editor and create a new flow.
 
 3. Drag a "dynamodb" node from the Node-RED palette onto the workspace.
@@ -281,3 +264,5 @@ This code extracts the timestamp and value from each DynamoDB item, converts the
 
 9. Deploy the Node-RED flow and open the Node-RED dashboard to view the chart.
 Congratulations! You have now visualized the sensor data retrieved from AWS DynamoDB in a chart using Node-RED.
+
+

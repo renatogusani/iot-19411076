@@ -13,7 +13,7 @@
      <a href="https://github.com/renatogusani/iot-19411076"><strong>Explore the docs »</strong></a>
      <br />
      <br />
-     <a href="https://github.com/renatogusani/iot-19411076">Report Bug</a>
+     <a href="https://github.com/renatogusani/iot-19411076/issues">Report Bug</a>
    </p>
  </div>
 

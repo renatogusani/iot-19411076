@@ -6,7 +6,7 @@
     <img src="img/banner.png" alt="Banner">
   </a>
 
-  <h3 align="center">Bsc. (Honours) in Data Science | NCI</h3>
+  <h3 align="center">IoT Real Time Analytics Assessment | NCI</h3>
 
    <p align="center">
      <br />
@@ -31,8 +31,7 @@
 <img alt="license" src="https://img.shields.io/github/license/renatogusani/Bsc.-Data-Science?logo=Open%20Source%20Initiative&style=plastic">
 </p>
 
-## IoT Real Time Analytics Assessment
-# Building a Cloud-Based IoT System with PI Sense Hat SIM, Node-RED and AWS DynamoDB
+## Building a Cloud-Based IoT System with PI Sense Hat SIM, Node-RED and AWS DynamoDB
 
 This guide will walk you through the steps to build a cloud-based IoT system using Node-RED and AWS DynamoDB. By following these steps, you will be able to access sensor values, publish them to the cloud, and retrieve and graph the findings in a web application.
 

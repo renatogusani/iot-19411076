@@ -3,21 +3,21 @@
 <br />
 <div align="center">
   <a href="https://github.com/renatogusani/Bsc.-Data-Science">
-    <img src="img/banner.png" alt="Banner">
+    <img src="image.png" alt="Banner">
   </a>
 
   <h3 align="center">IoT Real Time Analytics Assessment | NCI</h3>
 
    <p align="center">
      <br />
-     <a href="https://github.com/renatogusani/Bsc.-Data-Science"><strong>Explore the docs »</strong></a>
+     <a href="https://github.com/renatogusani/iot-19411076"><strong>Explore the docs »</strong></a>
      <br />
      <br />
      <a href="http://renatogusani.github.io">View Site</a>
      ·
-     <a href="https://github.com/renatogusani/Bsc.-Data-Science">Report Bug</a>
+     <a href="https://github.com/renatogusani/iot-19411076">Report Bug</a>
      ·
-     <a href="https://github.com/renatogusani/Bsc.-Data-Science">Request Feature</a>
+     <a href="https://github.com/renatogusani/iot-19411076">Request Feature</a>
    </p>
  </div>
 

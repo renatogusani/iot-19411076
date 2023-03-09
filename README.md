@@ -2,6 +2,8 @@
 
 # Building a Cloud-Based IoT System with PI Sense Hat SIM, Node-RED and AWS DynamoDB
 
+![](image.png)
+
 This guide will walk you through the steps to build a cloud-based IoT system using Node-RED and AWS DynamoDB. By following these steps, you will be able to access sensor values, publish them to the cloud, and retrieve and graph the findings in a web application.
 
 # To complete the steps mentioned in the below message, you will need to install the following Node-RED nodes:

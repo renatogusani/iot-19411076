@@ -227,8 +227,6 @@ Here are the step-by-step technical details for verifying data in DynamoDB:
 
 6. If you see the simulated sensor data in the table, then the integration between Node-RED and AWS DynamoDB is working correctly.
 
-### Step 5: Verify Data in DynamoDB
-
 Wait for the Node-RED flow to publish some sensor data to AWS IoT Core. Go to the AWS DynamoDB console and verify that the data is being written to the table.
 
 ### Step 6: Visualize the Data in Node-RED
@@ -262,6 +260,7 @@ This code extracts the timestamp and value from each DynamoDB item, converts the
 8. Double-click the "ui_chart" node and configure it with the desired settings for the chart, such as the chart type, title, and axis labels.
 
 9. Deploy the Node-RED flow and open the Node-RED dashboard to view the chart.
+
 Congratulations! You have now visualized the sensor data retrieved from AWS DynamoDB in a chart using Node-RED.
 
 

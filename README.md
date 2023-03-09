@@ -14,8 +14,6 @@
      <br />
      <br />
      <a href="https://github.com/renatogusani/iot-19411076">Report Bug</a>
-     ·
-     <a href="https://github.com/renatogusani/iot-19411076">Request Feature</a>
    </p>
  </div>
 

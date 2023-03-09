@@ -14,6 +14,8 @@
      <br />
      <br />
      <a href="https://github.com/renatogusani/iot-19411076/issues">Report Bug</a>
+     .
+     <a href="https://github.com/renatogusani/iot-19411076/issues">View Video</a>
    </p>
  </div>
 
@@ -31,7 +33,7 @@
 
 This guide will walk you through the steps to build a cloud-based IoT system using Node-RED and AWS DynamoDB. By following these steps, you will be able to access sensor values, publish them to the cloud, and retrieve and graph the findings in a web application.
 
-# To complete the steps mentioned in the below message, you will need to install the following Node-RED nodes:
+# To complete the steps mentioned in the below guide, you will need to install the following Node-RED nodes:
 
 1. ```node-red-dashboard:``` This node provides a set of pre-built UI components for creating a web dashboard to visualize and control IoT data.
 

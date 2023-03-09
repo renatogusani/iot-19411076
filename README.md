@@ -22,13 +22,13 @@
  </div>
 
 <p align="center">
-<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/renatogusani/Bsc.-Data-Science?color=%230062cc&label=last%20commit&logo=Github&style=plastic">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/renatogusani/iot-19411076?color=%230062cc&label=last%20commit&logo=Github&style=plastic">
   
-<img alt="Files in Repo" src="https://img.shields.io/github/directory-file-count/renatogusani/Bsc.-Data-Science?color=%23414a4c&label=files&logo=Files&logoColor=%23FBFAF3&style=plastic">
+<img alt="Files in Repo" src="https://img.shields.io/github/directory-file-count/renatogusani/iot-19411076?color=%23414a4c&label=files&logo=Files&logoColor=%23FBFAF3&style=plastic">
   
-<img alt="repo size" src="https://img.shields.io/github/repo-size/renatogusani/Bsc.-Data-Science?logo=DocuSign&style=plastic?">
+<img alt="repo size" src="https://img.shields.io/github/repo-size/renatogusani/iot-19411076?logo=DocuSign&style=plastic?">
   
-<img alt="license" src="https://img.shields.io/github/license/renatogusani/Bsc.-Data-Science?logo=Open%20Source%20Initiative&style=plastic">
+<img alt="license" src="https://img.shields.io/github/license/renatogusani/iot-19411076?logo=Open%20Source%20Initiative&style=plastic">
 </p>
 
 ## Building a Cloud-Based IoT System with PI Sense Hat SIM, Node-RED and AWS DynamoDB

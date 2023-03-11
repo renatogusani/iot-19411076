@@ -1,0 +1,7 @@
+msg.payload = msg.payload.Items.map(item => {
+  return {
+    timestamp: new Date(item.timestamp.S).getTime(),
+    value: parseFloat(item.value.N)
+  };
+});
+return msg;

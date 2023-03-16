@@ -15,7 +15,7 @@
      <br />
      <a href="https://github.com/renatogusani/iot-19411076/issues">Report Bug</a>
      |
-     <a href="https://github.com/renatogusani/iot-19411076/issues">View Video</a>
+     <a href="https://youtu.be/w8tH2MndvdU">View Video</a>
    </p>
  </div>
 
